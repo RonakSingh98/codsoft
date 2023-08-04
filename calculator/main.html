@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="result" class="input" name="display">
+      <div class="buttons">
+        <div class="operators">
+          <input type="button" value="+" onclick="display('+')" onkeyup="myFunction(event)">
+          <input type="button" value="-" onclick="display('-')" onkeyup="myFunction(event)">
+          <input type="button" value="*" onclick="display('*')" onkeyup="myFunction(event)">
+          <input type="button" value="/" onclick="display('/')" onkeyup="myFunction(event)">
+        </div>
+        <div class="grid">
+          <div class="numbers">
+            <input type="button" value="7" onclick="display(7)" onkeyup="myFunction(event)">
+            <input type="button" value="8" onclick="display(8)" onkeyup="myFunction(event)">
+            <input type="button" value="9" onclick="display(9)" onkeyup="myFunction(event)">
+          </div>
+          <div class="numbers">
+            <input type="button" value="5" onclick="display(5)" onkeyup="myFunction(event)">
+            <input type="button" value="6" onclick="display(6)" onkeyup="myFunction(event)">
+            <input type="button" value="7" onclick="display(7)" onkeyup="myFunction(event)">
+            </div>
+            <div class="numbers">
+              <input type="button" value="2" onclick="display(2)" onkeyup="myFunction(event)">
+              <input type="button" value="3" onclick="display(3)" onkeyup="myFunction(event)">
+              <input type="button" value="4" onclick="display(4)" onkeyup="myFunction(event)">
+            </div>
+            <div class="numbers">
+              <input type="button" value="0" onclick="display(0)" onkeyup="myFunction(event)">
+              <input type="button" value="1" onclick="display(1)" onkeyup="myFunction(event)">
+              <input type="button" value="c" onclick="clr()" onkeyup="myFunction(event)"/>
+            </div>
+          </div>
+          <input class="equal" type="button" value="=" onclick="calculate()" onkeyup="myFunction(event)">
+        </div>
+      </div>
+    </div>
+    
+    <script src="main.js"></script>
+  </body>
+  </html>
